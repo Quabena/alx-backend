@@ -4,11 +4,11 @@ Flask app with Babel for i18n.
 Selects locale based on request headers.
 """
 
-from flask import Flask, render_template, request
+from flask import Flask, request, render_template, request
 from flask_babel import Babel
 
 
-class Config:
+class Config(object):
     """
     Configuration for Babel.
     Sets supported languages and default locale/timezone.
