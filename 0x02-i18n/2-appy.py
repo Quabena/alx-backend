@@ -4,7 +4,9 @@ Flask app with Babel for i18n.
 Selects locale based on request headers.
 """
 
-from flask import Flask, request, render_template, request
+from flask import Flask
+from flask import render_template
+from flask import request
 from flask_babel import Babel
 
 
